@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { HarmonySetup } from "harmony-ai-editor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}<HarmonySetup repositoryId="5ca20331-af85-4bd7-87db-6f28e10de917"/></body>
     </html>
   );
 }
